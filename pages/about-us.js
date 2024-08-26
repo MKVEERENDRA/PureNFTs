@@ -33,7 +33,6 @@ const aboutus = () => {
                     <h2>About NFT Marketplace</h2>
                     <p>NFT Marketplace is a decentralized, community-driven platform that connects creators, collectors, and enthusiasts. Our mission is to create a global marketplace for unique digital assets and collectibles, fostering a sense of ownership and community among users. By offering a wide range of NFTs, art, and games, we aim to inspire creators, encourage collectors, and promote the appreciation of the art world.</p>
                 </div>
-                <FastFacts />
                 <div className={Style.aboutus_box_founder}>
                     <h2>Meet Our Founders</h2>
                     <div className={Style.aboutus_box_founder_grid}>
