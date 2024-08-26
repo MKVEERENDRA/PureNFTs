@@ -5,6 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { FaUser } from 'react-icons/fa';
 import { Button } from '@/components/Comindex';
 import images from '../img';
+
 import formStyle from "../AccountPage/Form/form.module.css";
 import Style from "../styles/aboutus.module.css";
 
