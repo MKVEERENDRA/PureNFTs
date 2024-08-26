@@ -4,7 +4,6 @@ import { TiSocialFacebook, TiSocialInstagram, TiSocialLinkedin, TiSocialTwitter,
 import { HiOutlineMail } from 'react-icons/hi';
 import { FaUser } from 'react-icons/fa';
 import { Button } from '@/components/Comindex';
-import FastFacts from '../Fact/Fact';
 import images from '../img';
 import formStyle from "../AccountPage/Form/form.module.css";
 import Style from "../styles/aboutus.module.css";
