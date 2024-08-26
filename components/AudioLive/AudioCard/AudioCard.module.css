@@ -1,0 +1,122 @@
+.audioCard {
+    background-color: #bb0000; /* White background for a clean look */
+    border-radius: 15px; /* Rounded corners for a modern feel */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    position: relative;
+    overflow: hidden;
+    color: #f1e1e1;
+}
+
+.audioCard:hover {
+    box-shadow: 9px 6px 18px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.audioCard_box_like_time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .1rem;
+}
+
+.audioCard_box_like {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.audioCard_box_like_icon {
+    color: #fafafa; /* Light red for liked icon */
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+.audioCard_box_like_icon_unlike {
+    color: #2b0000; /* Grey for unliked icon */
+    font-size: 2rem;
+    gap: 1rem;
+    transition: color 0.3s ease; /* Smooth transition for icon color */
+    border: 2\px solid white;
+}
+
+.audioCard_box_time {
+    text-align: right;
+}
+
+.audioCard_box_like_time_remaing {
+    font-size: 0.9rem;
+    color: #fffefe; /* Light grey for remaining time */
+}
+
+.audioCard_box_player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.audioCard_box_musicWave {
+    width: 100px;
+    height: 100px;
+    background: url('/img/musicwave.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8; /* More prominent background */
+    margin-right: 3px; /* Space between wave and button */
+}
+
+.audioCard_box_musicPlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 11111;
+}
+
+.audioCard_box_musicPlayer_icon {
+    font-size: 3rem;
+    color: #000000; /* Light red for play/pause icon */
+    cursor: pointer;
+}
+
+.audioCard_box_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.audioCard_box_details_info {
+    text-align: center;
+    margin-left:13rem ;
+
+}
+
+.audioCard_box_details_info h4 {
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+}
+
+.audioCard_box_details_info_price small {
+    font-size: 0.9rem;
+    color: #ffffff; /* Light grey for price label */
+}
+
+.audioCard_box_details_info_price p {
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%); /* Darker grey for price value */
+}
+
+.audioCard_box_details_stock {
+    text-align: right;
+    margin-left:15rem ;
+
+    margin-top: 1rem; /* Space between price and stock */
+}
+
+.audioCard_box_img {
+    border-radius: 15px; /* Same border radius for consistency */
+    overflow: hidden; /* Ensure image fits within the card */
+}

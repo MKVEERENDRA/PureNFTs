@@ -1,0 +1,18 @@
+.like{
+    display: flex;
+    align-items: flex-start;
+    gap: .3rem;   
+}
+.like_box{
+ border-radius: 50%;
+}
+.like_img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.like_box_img{
+
+    cursor: pointer;
+    width: 100%;
+    border-radius: 70%;
+}

@@ -1,0 +1,184 @@
+.filter{
+    width: 100%;
+}
+.filter_box{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+padding-bottom: 4rem;
+
+}
+
+
+.filter_box_left{
+    display: flex;
+gap:2rem;
+}
+.filter_box_left button:hover{
+    border-style:dashed;
+    box-shadow: none;
+
+    
+}
+.filter_box_left button{
+    border-radius: 2rem;
+    box-shadow: 2px 2px 7px 3px  #995a5a;
+    border: 1px solid #a83030 1px 1px 2px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    display: flex;
+    border-style: dotted;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid #000;
+    transition: all .3s ease-in;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+
+    align-items: center;
+    gap: .5rem;
+    align-items: center;
+    gap: .5rem;
+    
+}
+.filter_box_items{
+    display: flex;
+    padding: 2rem;
+    border-top:1px solid var(--icons-color) ;
+    gap: 2rem;
+align-items: center;
+justify-content: center;
+width: 100%;
+font-size: 15px;
+
+}
+.filter_box_items_box_item{
+    background-color: var(--icons-color);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border-style: groove;
+    color: var(--main-bg-color);
+    cursor: pointer;
+}
+.filter_box_items_box_item_trans{
+    border: 1px solid var(--icons-color);
+    color: var(--icons-color);
+    padding: .5rem 1rem;
+    border-radius:2rem ;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.filter_box_right_box{
+    border-style:double;
+    padding: 1rem 1.5rem;
+    border-radius: .6rem;
+    box-shadow: 1px 1px 1px 1px #449f2053;
+    border: 1px solid #a83030 1px 1px 2px;
+    transition: all .3s ease-in;    border: 1px solid #b48d18;
+    transition: all .3s ease-in;
+    font-size: .9rem;
+    cursor: pointer;
+    display: flex;
+
+    align-items: center;
+    gap: .5rem;
+    
+}
+.filter_box_right_box:hover{
+    transition: all .3s ease-in;
+    box-shadow: none;
+}
+@media screen and (min-device-width:320px) and 
+(max-device-width:400px) {
+    .filter_box_right{
+        border-style:double;
+        padding-top: 1rem 1.5rem;
+        margin-top: 9px;
+        border-radius: .1rem;
+        justify-content: center;
+        box-shadow: 1px 1px 1px;
+        border: 1px solid #a83030 1px 1px 2px;
+        transition: all .3s ease-in;    border: 1px solid #b48d18;
+        transition: all .3s ease-in;
+        font-size: .9rem;
+        cursor: pointer;
+        display: flex;
+    
+        align-items: center;
+        gap: .5rem;
+        
+    }
+    .filter_box_items_box_item_trans{
+        width: fit-content;
+        height: fit-content;
+        gap: 3px;
+        display:grid;
+        overflow: scroll;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-device-width:600px) and 
+(max-device-width:1020px) {
+    .filter_box_right{
+        border-style:double;
+        padding-top: 1rem 1.5rem;
+        margin-top: 9px;
+        margin-left:140px ;
+        border-radius: .1rem;
+        padding-right: 80px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 1px;
+        border: .1px solid #a83030 .1px .1px .2px;
+        transition: all .3s ease-in;   
+        transition: all .3s ease-in;
+        font-size: .9rem;
+        cursor: pointer;
+        display: block;
+        position: relative;
+    
+        align-items: center;
+        gap: .5rem;
+        
+    }
+    .filter_box_items_box_item_trans{
+        width: fit-content;
+        height: fit-content;
+        gap: 3px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+    .filter_box {
+
+        width: 100%;
+        display: block;
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .filter_box_left {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+
+    .filter_box_left button {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .filter_box_items_box {
+        flex-direction: column;
+    }
+
+    .filter_box_items_box_item_trans {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

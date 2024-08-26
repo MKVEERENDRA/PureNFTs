@@ -1,0 +1,12 @@
+.AuthorNftCardBox{
+    width: 100%;
+}
+
+
+.AuthorNftCardBox_box{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin: 0 auto;
+}

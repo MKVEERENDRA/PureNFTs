@@ -1,0 +1,21 @@
+.Loder{
+    width:100%;
+    margin-block:4rem ;
+}
+.Loder_box{
+    width:50%;
+    margin: 0 auto;
+}
+.Loder_box_img{
+    margin-bottom: 14rem;
+    margin-top: -2rem;
+    animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-200px); }
+}
+.Loder_box_img_img{
+    border-radius: 50%;
+}

@@ -1,0 +1,96 @@
+.Form{
+    width: 100%;
+}
+.Form_box_input{
+    margin-top:2rem;
+
+}
+
+.Form_box_input label{
+    display: block;
+    width: 100%;
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.Form_box_input_userName{
+    padding:1rem 1rem 1rem;
+    border: 1px solid var(--icons-color);
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.Form_box_input::placeholder{
+    color: var(--icons-color);
+    font-size: 1.3rem;
+}
+.Form_box_input_box{
+    width: 100%;
+    border: 1px solid var(--icons-color);
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.Form_box_input_box_icon{
+    
+    background-color: var(--icons-color);
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: .5rem 1rem;
+
+}
+
+.Form_box_input_box input{
+    width: 100%;
+    padding:.9rem .1rem 1rem 1rem;
+    outline: none;
+font-weight: 1000; 
+font-size: 1rem;   background-color: transparent;
+}
+.Form_box_input textarea{
+    width: 100%;
+    padding:1rem;
+    padding-left: 3rem;
+    border: 3px solid var(--icons-color); /* Add border color */
+
+    border-radius: .4rem;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    height: 10rem;
+}
+.Form_box_input_box_icon_u{
+    background-color: var(--icons-color);
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: .7rem 1rem;
+}
+.Form_box_input_social{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+}
+.Form_box_btn{
+    margin: 4rem 0;
+}
+.button{
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color.3s ease-in-out;
+}
+

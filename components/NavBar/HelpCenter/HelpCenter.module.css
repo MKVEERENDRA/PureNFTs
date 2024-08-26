@@ -1,0 +1,11 @@
+.HelpCenter{
+    padding:.5rem 1rem;
+    transition: all .3s ease-in;
+    z-index:2222222222;
+}
+
+.HelpCenter:hover{
+    background-color: #06777c;
+    color:  #099b4d;
+    border-radius: .3rem;
+}

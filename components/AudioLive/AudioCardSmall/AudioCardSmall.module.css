@@ -1,0 +1,76 @@
+.audioPlayer {
+    background-color: #ffffff; /* White background for a clean look */
+    border-radius: 15px; /* Rounded corners for a modern feel */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border: 1px solid #e0e0e0; /* Light grey border for a subtle outline */
+}
+
+.audioPlayer:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.audioPlayer_box {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.audioPlayer_box_img {
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-right: 1rem; /* Space between image and text */
+}
+
+.audioPlayer_box_info {
+    flex: 1;
+    text-align: left;
+    border-left: 1px solid #e0e0e0; /* Border between image and info */
+    padding-left: 1rem; /* Space for border */
+}
+
+.audioPlayer_box_info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0; /* Remove top margin */
+}
+
+.audioPlayer_box_info_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audioPlayer_box_info_box_price {
+    border-left: 1px solid #e0e0e0; /* Border between info and price */
+    padding-left: 1rem; /* Space for border */
+}
+
+.audioPlayer_box_info_box_price small {
+    font-size: 0.9rem;
+    color: #888; /* Light grey for price label */
+}
+
+.audioPlayer_box_info_box_price p {
+    font-size: 1.1rem;
+    color: #333; /* Darker grey for price value */
+    margin: 0; /* Remove margins */
+}
+
+.audioPlayer_box_playBtn {
+    font-size: 2rem;
+    color: #ff6f61; /* Light red for play/pause icon */
+    cursor: pointer;
+    margin-left: 1rem; /* Space between info and play button */
+    border-left: 1px solid #e0e0e0; /* Border between price and play button */
+    padding-left: 1rem; /* Space for border */
+}

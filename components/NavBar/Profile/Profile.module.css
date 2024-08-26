@@ -1,0 +1,115 @@
+.profile {
+    position: absolute;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Gradient background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-size: 1rem;
+    width: 20rem;
+    border-radius: 1rem;
+    left: -17rem;
+    top: 4.5rem;
+    line-height: 2;
+    z-index: 2222222222;
+    color: #ffffff; /* White text for readability */
+    transition: background-color 0.3s ease;
+}
+
+.profile_account {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+        margin-bottom: 13px;
+line-height: 2;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Border to separate account section */
+}
+
+.profile_account_img {
+    border-radius: 50%; /* Circular image */
+    border: 3px solid var(--icons-color);
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.profile_account_info {
+    line-height: 1.5;
+    /* Set a max-width to force wrapping of long addresses */
+    max-width: 100%;
+}
+
+.profile_account_info small {
+    /* Ensure the address wraps correctly */
+    display: block;
+    overflow-wrap: break-word;
+    word-break: break-all; /* Breaks long words to fit */
+    margin-top: 0.5rem; /* Add space between the name and address */
+}
+
+
+.profile_account_info p {
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.profile_menu {
+    padding: 1rem 0;
+}
+
+.profile_menu_one,
+.profile_menu_two {
+    margin-bottom: 1rem;
+}
+
+.profile_menu_one_item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 19px;
+text-decoration: none;
+color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #ff6f61, #0babd7);
+}
+
+.profile_menu_one_item:hover {
+    background: linear-gradient(135deg, #d94555, #e11a07);
+    color: #ffffff; /* Ensure text remains readable */
+}
+.profile_menu_one_item::selection{
+    background: linear-gradient(135deg, #ff6f61, #0babd7);
+    color: #ffffff; /* Ensure text remains readable */
+    transition: 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    text-decoration: double;
+    border-radius: 0.5rem;
+}
+
+.profile_menu_one_item p {
+    margin: 0;
+    color: rgb(10, 26, 40);
+    font-weight: 500;
+    text-decoration:solid;
+    text-decoration-line: none;
+}
+.mbu{
+    margin: 0;
+    color: rgb(10, 26, 40);
+    font-weight: 500;
+    text-decoration:solid;
+    text-decoration-line: none;
+}
+@media screen and (max-width: 35em) {
+    .profile {
+        left: -14rem;
+        width: 100%;
+    }
+    .profile_menu_one_item, .profile_menu_two_item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        width: 100%;
+    }
+}

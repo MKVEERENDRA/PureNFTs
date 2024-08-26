@@ -1,0 +1,178 @@
+.upload_box_input_para {
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.upload_box_slider_div {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.upload_box {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust as necessary */
+}
+
+.upload_box_slider {
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    padding: 2.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    max-width: 190px; /* Adjust as necessary */
+    position: relative; /* Added for positioning the icon */
+}
+
+.upload_box_slider:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-5px);
+}
+
+.upload_box_slider.active {
+    background-color: var(--primary-color);
+    color: var(--hover-text-color);
+}
+
+.upload_box_slider_box_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.upload_box_slider_box_img_img {
+    font-size: 3rem; /* Adjusted for better size */
+    font-weight: 500;
+    border-radius: 50%;
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.upload_box_slider_box_img_icon {
+    background-color: var(--primary-color);
+    color: var(--hover-text-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    padding: 0.4rem;
+    font-size: .7rem;
+    position: absolute;
+    top: 33px;
+    right: 49px;
+}
+
+.upload_box_slider p {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Two-column layout for Price, Royalties, and Properties */
+.upload_box_inputs_group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.upload_box_inputs_group > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload_box_btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-block: 4rem;
+    gap: 2rem;
+}
+.upload_box_inputs_group {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.upload_box_inputs_left
+ {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.upload_box_inputs_right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.upload_box_inputs_left > .Form_box_input,
+.upload_box_inputs_right > .Form_box_input {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .upload_box_inputs_group {
+    flex-direction: column;
+  }
+}
+
+.upload_box_btn button {
+    width: 100%;
+    display: grid;
+    align-self: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.upload_box_btn .upload_box_btn_submit {
+    background-color: var(--primary-color);
+    color: var(--hover-text-color);
+}
+
+.upload_box_btn .upload_box_btn_reset {
+    background-color: var(--secondary-color);
+    color: var(--hover-text-color);
+}
+
+.upload_box_btn button:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+}
+
+.active {
+    background-color: var(--primary-color);
+    color: var(--hover-text-color);
+}
+
+@media screen and (max-width: 500px) {
+    .upload_box_inputs_group {
+        grid-template-columns: 1fr;
+    }
+
+    .upload_box_btn {
+        grid-template-columns: 1fr;
+    }
+}

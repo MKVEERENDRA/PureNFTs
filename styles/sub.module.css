@@ -1,0 +1,121 @@
+/* Subscription container */
+.Subscription {
+    padding: 4rem 1rem;
+    background-color: var(--main-bg-color);
+    text-align: center;
+    color: var(--secondary-color);
+ 
+  }
+  
+  /* Subscription box to center content */
+  .Subscription_box {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  /* Individual subscription plan container */
+  .Subscription_plan {
+    background-color: var(--text-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .Subscription_plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Plan header with plan name, price, and duration */
+  .plan_header {
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--primary-color) 50%, var(--secondary-color) 100%);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    position: relative;
+  }
+  
+  .plan_header h2 {
+    font-size: 2rem;
+  }
+  
+  .plan_header p {
+    margin: 0.5rem 0;
+  }
+  
+  .price {
+    font-size: 2.5rem;
+  }
+  
+  .duration {
+    font-size: 1.2rem;
+  }
+  
+  /* Popular tag style */
+  .popular_tag {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Services list */
+  .services, .features {
+    list-style: none;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .services h3, .features h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .services li, .features li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Subscribe button */
+  .subscribe_button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe_button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Popular plan special style */
+  .popular {
+    border: 2px solid var(--secondary-color);
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .Subscription_box {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,160 @@
+.AuthorProfileCard{
+    width: 100%;
+    z-index: 2222;
+    margin-top: 5rem;
+}
+.AuthorProfileCard_box{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1.3fr;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    padding: 2.5rem 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    gap: 3rem;
+}
+.AuthorProfileCard_box_img_img{
+    border-radius: 10%;
+    width: 130%;
+}
+.AuthorProfileCard_box_info{
+   margin-left: 3rem;
+}
+.AuthorProfileCard_box_info h4{
+    font-size: 1.4rem;
+    line-height: 0;
+    margin-top: -.5rem;
+
+}
+.AuthorProfileCard_box_info_address{
+    margin-top: -1rem;
+}
+.AuthorProfileCard_box_info_address input{
+    outline: none;
+    width: 35%;
+    padding:.5rem;
+    border: 1px solid #ccc;
+    background-color: transparent;
+}
+.AuthorProfileCard_box_info_address_icon{
+    transition: all .3s ease-in;
+}
+.AuthorProfileCard_box_info_address_icon:hover{
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    color: var(--icons-color);
+}
+.AuthorProfileCard_box_info p{
+    font-size: 1.1rem;
+    line-height: 1;
+    width: 90%;
+}
+.AuthorProfileCard_box_info_social{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.AuthorProfileCard_box_info_social a{
+    color:cornflowerblue;
+    transition: all.3s ease-in;
+    background-color: antiquewhite;
+    padding: .2rem;
+  
+    border: 1px solid #000;
+    border-radius: 30%;
+    cursor: pointer;
+}
+.AuthorProfileCard_box_info_social a:hover{
+    background-color: cornflowerblue;
+    color: var(--main-bg-color);
+    box-shadow: 1px 1px 1px;
+}
+.AuthorProfileCard_box_share{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    align-self: start;
+    position: relative;
+}
+.AuthorProfileCard_box_share_icon{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.AuthorProfileCard_box_share_upload{
+position: absolute;
+padding: .5rem;
+width: 15rem;
+box-shadow: var(--box-shadow);
+border-radius: 1rem;
+background-color: antiquewhite;
+left: 2rem;
+top: 5rem;
+z-index: 11111;
+}
+.AuthorProfileCard_box_share_upload p{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    padding: .3rem .5rem;
+}
+.AuthorProfileCard_box_share_upload p:hover{
+    background-color: cornflowerblue;
+    color: var(--main-bg-color);
+    box-shadow: 1px 1px 1px;
+    border-radius: .5rem;
+}
+
+.AuthorProfileCard_box_share_upload span {
+    font-size: 1.5rem;
+
+}
+.AuthorProfileCard_box_share_report{
+    position: absolute;
+    padding: .5rem;
+    width: 10rem;
+    box-shadow: 1px 1px 1px;
+    background-color: var(--main-bg-color);
+    left: 5rem;
+    top: 4rem;
+    z-index: 1111111;
+}
+.AuthorProfileCard_box_share_report p{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    line-height: 0;
+    cursor: pointer;
+    transition: all.3s ease-in-out;
+    padding:.3rem .5rem;
+}
+
+.AuthorProfileCard_box_share_report:hover{
+    background-color: cornflowerblue;
+    color: var(--main-bg-color);
+    box-shadow: 1px 1px 1px;
+    border-radius:.5rem;
+    cursor: pointer;
+}
+@media screen and (max-width:35rem){
+    .AuthorProfileCard_box{
+        width: 90%;
+        grid-template-columns: 1fr;
+        padding: .5rem .5rem 1.5rem;
+        gap: 1rem;
+
+         
+    }
+    .AuthorProfileCard_box_img_img{
+        border-radius: 10%;
+        width: 80%;
+    }
+
+    
+}

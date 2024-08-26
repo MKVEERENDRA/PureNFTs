@@ -1,0 +1,19 @@
+.audioLive {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light grey background for a neutral look */
+}
+
+.audioLive_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.audioLive_box_left,
+.audioLive_box_right {
+    flex: 1;
+    min-width: 300px;
+}

@@ -1,0 +1,28 @@
+/* styles/StyledConnectButton.module.css */
+.buttonContainer {
+    background-color: rgb(2, 77, 77);
+    border: 1px solid bisque;
+    color: bisque;
+    padding: .3rem .2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+  }
+  
+  .buttonContainer button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .buttonContainer:hover {
+    color: rgb(35, 236, 169);
+    background-color: rgb(105, 105, 9);
+    border: 1px solid beige;
+  }
+  
